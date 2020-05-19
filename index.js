@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require('dotenv');
 
 const authRoute = require("./routes/auth");
+const posts = require("./routes/posts")
 
 const app = express();
 
@@ -19,6 +20,7 @@ mongoose.connect(
 app.use(express.json());
 
 app.use("/api/user", authRoute);
+app.use('/api/posts', posts)
 
 app.listen(3000, () => {
   console.log("Running at port 3000");
