@@ -1,0 +1,365 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Disclaimer Section */
+.disclaimer {
+    background-color: #e8e6e1;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Desktop Layout (Default) */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* Trustpilot and Social Section */
+.trustpilot-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    min-width: 280px;
+}
+
+.trustpilot-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.rating-text {
+    font-weight: 600;
+    color: #333;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #00b67a;
+    font-size: 16px;
+}
+
+.star.filled {
+    color: #00b67a;
+}
+
+.star.half {
+    color: #00b67a;
+    opacity: 0.7;
+}
+
+.trustpilot-logo {
+    color: #00b67a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Social Media Section */
+.social-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Navigation Links */
+.footer-nav {
+    display: flex;
+    gap: 80px;
+    flex: 1;
+}
+
+.nav-column h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nav-column ul {
+    list-style: none;
+}
+
+.nav-column li {
+    margin-bottom: 12px;
+}
+
+.nav-column a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-column a:hover {
+    color: #333;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+    background-color: #f8f8f8;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 300;
+    color: #ccc;
+    letter-spacing: 2px;
+    font-family: serif;
+}
+
+.legal-links {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.legal-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+    color: #333;
+}
+
+.copyright {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.copyright p {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        padding: 30px 20px;
+    }
+
+    .trustpilot-section {
+        align-items: center;
+        order: -1;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .trustpilot-rating {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-nav {
+        gap: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-column {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .legal-links {
+        position: static;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .copyright {
+        position: static;
+        bottom: auto;
+        text-align: center;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .disclaimer {
+        padding: 15px 20px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .footer-content {
+        padding: 25px 20px;
+        gap: 30px;
+    }
+
+    .trustpilot-rating {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-section h3 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .footer-nav {
+        gap: 40px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-column {
+        flex: 1;
+        min-width: 120px;
+        max-width: 150px;
+    }
+
+    /* Show only first two columns on mobile, hide third */
+    .nav-column:nth-child(3) {
+        display: none;
+    }
+
+    .nav-column h3 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .nav-column a {
+        font-size: 13px;
+    }
+
+    .nav-column li {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .legal-links a {
+        font-size: 12px;
+    }
+
+    .copyright p {
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+/* Very Small Mobile */
+@media (max-width: 480px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .nav-column {
+        min-width: auto;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
